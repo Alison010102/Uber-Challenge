@@ -1,8 +1,11 @@
 package com.application;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import com.adapters.EmailSenderGateway;
 import com.core.EmailSenderUseCase;
 
+@Service
 public class EmailSenderService implements EmailSenderUseCase {
 
     private final EmailSenderGateway emailSenderGateway;
