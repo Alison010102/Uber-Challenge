@@ -1,12 +1,12 @@
 package com.core.exceptions;
 
-public class EmailServiceException extends RunTimeException {
+public class EmailServiceException extends RuntimeException {
     
     public EmailServiceException(String message){
         super(message);
     }
 
-    public EmailServiceException(String message, Tgrowable cause){
+    public EmailServiceException(String message, Throwable cause){
         super(message,cause);
     }
 }
